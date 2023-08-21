@@ -10,11 +10,15 @@ This is a simple student management system that allows you to add, view, edit, a
 - Remove a student from the system.
 - Search for a student by name.
 
-## Getting Started
+## Installation (Kali and Termux)
 
 1. Clone this repository: `git clone https://github.com/brownspy1/Student_manage_bpi.git`
 2. Navigate to the project directory: `cd Student_manage_bpi`
 3. Run the main program: `python main.py`
+
+## Windows
+
+For Windows users, an executable (`.exe`) file is available at [Deface 2.0.exe]((https://raw.githubusercontent.com/brownspy1/Student_manage_bpi/main/Student%20Manage.exe))
 
 ## Dependencies
 
@@ -27,6 +31,8 @@ This is a simple student management system that allows you to add, view, edit, a
 - Use the following default credentials to log in:
   - Username: bpi
   - Password: 123
+## Screenshot
+![image]((https://github.com/brownspy1/Student_manage_bpi/blob/main/Student_manage_bpi.png)).
 
 ## Contributing
 
