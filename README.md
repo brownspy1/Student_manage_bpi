@@ -18,7 +18,7 @@ This is a simple student management system that allows you to add, view, edit, a
 
 ## Windows
 
-For Windows users, an executable (`.exe`) file is available at [Deface 2.0.exe]((https://raw.githubusercontent.com/brownspy1/Student_manage_bpi/main/Student%20Manage.exe))
+For Windows users, an executable (`.exe`) file is available at [Student Manage.exe](https://raw.githubusercontent.com/brownspy1/Student_manage_bpi/main/Student%20Manage.exe).
 
 ## Dependencies
 
@@ -32,7 +32,7 @@ For Windows users, an executable (`.exe`) file is available at [Deface 2.0.exe](
   - Username: bpi
   - Password: 123
 ## Screenshot
-![image]((https://github.com/brownspy1/Student_manage_bpi/blob/main/Student_manage_bpi.png)).
+![Screenshot](https://github.com/brownspy1/Student_manage_bpi/blob/main/Student_manage_bpi.png)
 
 ## Contributing
 
