@@ -1,6 +1,7 @@
 import csv
+from pyfiglet import *
+import os
 
-from bpi import login  # Assuming you have your own login function
 
 # Function to read data from CSV
 def read_from_csv():
@@ -17,6 +18,20 @@ def read_from_csv():
         return student_list
     except FileNotFoundError:
         return {}  # Return empty dictionary if the file doesn't exist
+
+
+# funcation for auth
+credentials = {'bpi': '123'}
+
+
+def login():
+    user = input('Username: ')
+    password = input('Password: ')  # Use getpass to input password securely
+    if credentials.get(user) == password:
+        return True
+    else:
+        print('Wrong username or password')
+        return False
 
 
 # Function to save data to CSV
@@ -37,15 +52,16 @@ def show_student(student_list):
     else:
         print('Name\t\tRoll\t\tDepartment\t\tSession')
         for roll, info in student_list.items():
-            print("{}\t\t{}\t\t{}\t\t\t{}".format(info['Name'],roll,  info['Department'], info['Session']))
+            print("{}\t\t{}\t\t{}\t\t\t{}".format(info['Name'], roll, info['Department'], info['Session']))
+
+
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
 # Main program
 def main():
     student_list = read_from_csv()
-
-
-
 
     if login():
         while True:
@@ -108,9 +124,16 @@ Barisal Polytechnic Institute
                     print('Student not found.')
 
             elif choice == 6:
-                print('Exiting the program.')
-                break
+                ask = input("Do you Really  Wan't to exit from this program Y/N: ")
+                if ask == 'Y' or ask == 'y':
+                    main()
+                else:
+                    print('Thank for using this program!')
+                    banner = pyfiglet.figlet_format("\tExit")
+                    print(banner)
+                    break
             else:
+                clear_terminal()
                 print('Invalid choice. Please choose a number between 1 and 6.')
     else:
         print('Sorry, you do not have access to this program!')
